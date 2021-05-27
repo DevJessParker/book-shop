@@ -110,7 +110,7 @@ a {
 #welcomescript {
     display: block;
     float: left;
-    padding: 0px 0px 0px 275px;
+    padding: 0px 0px 0px 180px;
     margin: 40px 0px 0px 0px;
 }
 
@@ -194,10 +194,29 @@ a {
       background-color: rgb(86, 31, 153);
       display: block;
       color: white;
+      columns: 2;
+      contain: content;
+  }
+
+  footer div {
+      display: block;
+      contain: content;
   }
 
   footer ul {
-      justify-self: right;
+      display: block;
+      list-style: none;
+      margin: 5px;
+  }
+
+  footer li {
+      text-align: right;
+      margin: 5px;
+  }
+
+  footer p {
+      margin-inline-start: 100px;
+      padding-top: 10px;
   }
 
 
