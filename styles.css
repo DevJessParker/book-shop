@@ -36,6 +36,7 @@ a {
 }
 
 
+
 .tab-bar { 
     max-width: 1200px; 
     margin: 0 auto;
@@ -63,7 +64,7 @@ a {
 
 .logobar {
     display: block;
-    padding: 5px;
+    padding: 0px 5px 5px 5px;
     columns: 2;
     justify-self: center;
     align-content: center;
@@ -110,8 +111,9 @@ a {
 #welcomescript {
     display: block;
     float: left;
-    padding: 0px 0px 0px 180px;
+    padding: 0px 5px 0px 150px;
     margin: 40px 0px 0px 0px;
+    font-size: 16px;
 }
 
 #welcomemessage {
@@ -251,6 +253,8 @@ a {
         margin-bottom: 40px;
 
   }
+
+  
 
   footer {
       background-color: rgb(86, 31, 153);
