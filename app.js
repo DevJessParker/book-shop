@@ -51,6 +51,10 @@ function BookRec(){
         let BookRec = prompt('How many book recommendations would you like? 1-7');
         console.log(BookRec);
         
+        userAttempts = 6;
+
+        for(let i = 0; i < userAttempts; i++){
+
         let rec1 ="Images/Don't Look Behind You Final.jpg";
         let rec2 ="Images/ADeathLikeSnow.jpg";
         let rec3 ="Images/Among Shadows Novella.jpg";
@@ -109,7 +113,12 @@ function BookRec(){
         }
 
         else {
-            alert('Stop breaking my website.');
+            prompt('Stop breaking my website! Enter a number between 1 and 7.');
+        }
+        console.log(i);
+        if (i == userAttempts - 1){
+            alert('Too late! No more tries.');
+            } 
         }
      }
     
