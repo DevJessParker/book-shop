@@ -7,6 +7,9 @@ function getUserName(){
     return userName;
 }
 
+
+//Function to Get User Answer Repeat Visitor
+
 function getUserAnswer(){
     let userAnswer = prompt('Have you been here before? ');
     console.log(userAnswer);
@@ -17,6 +20,18 @@ function getUserAnswer(){
         document.write('<h3>We love meeting new readers! Below you will find the featured releases for today.</h3>');
     }
 }
+
+// Function to Get Book Rec Answer
+
+function getBookRec(){
+    let bookRec = prompt('Would you like a book recommendation?')
+    let book1 ="Images/Don't Look Behind You Final.jpg"
+    if (bookRec.toLowerCase() == 'yes'){
+        document.write('<h3>We Recommend ');
+        document.write('<img src="' + book1 + '"/>')
+    }
+}
+
 
 
 
