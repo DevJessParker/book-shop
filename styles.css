@@ -1,5 +1,5 @@
 
-/* GLOBAL STYLES */ * 
+/* GLOBAL STYLES */ 
 
 { 
     box-sizing: border-box; 
@@ -8,7 +8,7 @@
 body {
     background-color: #f5f5f5; 
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     }
 
 
@@ -114,6 +114,12 @@ a {
     margin: 40px 0px 0px 0px;
 }
 
+#welcomemessage {
+    display: block;
+    text-justify: center;
+    text-align: center;
+}
+
 #sitelogo {
     display: block;
     max-width: 45%;
@@ -146,25 +152,57 @@ a {
 
 
 
-#section1desc {
-    margin-top: 60px;
+#section1desc {   
+    display: flex;
+    margin: 25px auto 25px auto;
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+    columns: 2;
+    width: 800px;
+    padding-right: 220px;
+}
+
+.trendingcolumn {
+    display: flex;
+    padding: 5px;
+    text-justify: center;
     text-align: center;
+    max-width: 400px;
 }
 
-#section1desc h2 {
-    font-size: 40px;
+.trendingcolumn h2 {
+    display: block;
+    margin: auto;
+    font-size: 45px
 }
 
-#section1desc p {
-    font-size: 25px;
-}
+#trending {
+    display: block;
+    max-width: 70%;
+    margin: auto;
+    padding-right: 125px;
+} 
 
+.titletrend {
+    max-width: 900px;
+    display: flex; 
+    margin: 30px 0px;
+    padding: 0px;
+    columns: 2;
+    align-items: center;
+    justify-items: center;
+} 
+
+
+
+/* Book Grid */
 
 .divbooklist {
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
     gap: 10px 2em;
-    padding: 40px;
+    padding: 30px 40px 40px 40px;
     justify-content: center;
 }
 
@@ -173,7 +211,9 @@ a {
 }
 
 .divbooklist p {
-    text-align: left; 
+    /* text-align: left; */
+    text-align: justify;
+    padding: 0px 10px;
 }
 
 .divbooklist h3 {
@@ -192,31 +232,61 @@ a {
 
   footer {
       background-color: rgb(86, 31, 153);
-      display: block;
+      display: flex;
       color: white;
       columns: 2;
       contain: content;
   }
 
   footer div {
-      display: block;
+      margin-inline-start: 100px;
+      display: flex;
       contain: content;
+      text-align: left;
+      margin: auto;
   }
+
+ /* #footmenu {
+     display: flex;
+     columns: 3;
+     text-justify: right;
+     padding: 0px 5px;
+     margin: auto;
+ } */
+
+ #footmenu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit), 40px;
+    gap: 4px 1em;
+    padding: 4px;
+    justify-content: center;
+}
+
+#footmenu :first-child {
+    align-self: top;
+}
+
+#footmenu div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
   footer ul {
       display: block;
       list-style: none;
-      margin: 5px;
+      margin: auto;
+      padding: auto;
+      padding-inline-start: 0px;
   }
 
   footer li {
-      text-align: right;
+      text-align: left;
       margin: 5px;
   }
 
   footer p {
-      margin-inline-start: 100px;
-      padding-top: 10px;
+      margin: auto;
   }
 
 

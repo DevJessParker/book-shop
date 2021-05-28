@@ -2,8 +2,10 @@
 
 
 <html>
-    <head><link rel="stylesheet" href="indexstyle.css">
+    <head>
+        <link rel="stylesheet" href="styles.css">
         <title>Book Shop</title>
+        <script src="app.js"></script>
     </head>
     <body>
         <main>
@@ -12,7 +14,7 @@
                     <div>
                         <img src="Images/Book Icon.png" id="sitelogo" alt="Site Logo">
                     </div>
-                        <div id="welcomescript"><script src="bookshop.js"></script></div>
+                        <div id="welcomescript"><script>getUserName()</script></div>
                         <img src="Images/user-circle.svg"id="iconimg3" alt="Messages">
                         <img src="Images/shopping-cart.svg" id="iconimg2" alt="Messages">
                         <img src="Images/paper-plane.svg" id="iconimg1" alt="Messages">
@@ -20,32 +22,38 @@
                 <div class="tab-bar">
                     <nav class="navigation">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Books</a></li>
-                            <li><a href="#">Authors</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contests</a></li>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="#">AUTHORS</a></li>
+                            <li><a href="#">SHOP</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTESTS</a></li>
                             <li><a href="#">YABS FAQ</a></li>
                         </ul> 
                     </nav>
                 </div>
             </header>
-       <div>
             <section id="section1desc">
-                <h2>What's Trending</h2>
-                <p>Here's a look at today's newest releases curated just for you.</p>
+                <div class="trendingcolumn">
+                    <h2>What's Trending</h2>
+                </div>
+                <div class="trendingcolumn">
+                    <img src= "Images/Trending.png" alt="Trending circle icon." id="trending">
+                </div>
             </section>
-        </div>
+            <div id="welcomemessage">
+                <script>getUserAnswer()</script>
+            </div>
             <div class="divbooklist">
                 <div>
                     <img src= "Images/RickyAtlasFallen.jpg" alt="Book Cover Image.">
                     <h3>Atlas Fallen</h3>
+
                     <p><i>Wine door's forget Minas Morgul? I bid you all a very fond farewell. Defending they're shone Ered. Almost who's comforts circus its pole Lothlórien trimming. Name managed dire mutilated pity Captain neither undone battle roast? Houses repel 24th echoes pierce lordship doom swiftly tough Haradrim. Reveal fortify Bombur's. 3434 hangs counter Thorin? Dragon-Slayer apple couldn't lift guarded.</i></p>
                 </div>
                 <div>
                     <img src= "Images/Palace of the Burned.jpg" alt="Book Cover Image.">
-                    <h3>Honor of the Burned</h3>
+                    <h3>Honor Before Burned</h3>
                     <p><i>Responsible shines 11 Sméagol rise unprotected deep odds fear. Escape slumbers Dwarf-lords favor ran infected jacksie risking broil? Suppressed Wraiths amusing pouch eyes dishcloth couple week. Crooked Warg tale. Hold rot Barad-dûr reclaimed aim even fishes. Night's drop Rabble-rousers? Do not take me for some conjurer of cheap tricks. Beautifully rides knowledge injuries early wanting bought fend Mordor unseen and. Offered wastelands archers ghost sautéed um plan Ere pleaded?</i></p>
                 </div>
                 <div>
@@ -57,18 +65,25 @@
         </main>
         <footer>
             <div><p>Copyright <strong>Books are Awesome</strong> 2021</p></div>
-            <div><ul>
-                <li>
-                    <a>Home</a>
-                </li>
-                <li>
-                    <a>Books</a>
-                </li>
-                <li>
-                    <a>Authors</a>
-                </li>
-            </ul>
-        </div>
+            <div id="footmenu">
+                <ul>
+                    <div>
+                        <li>
+                        <a>Home</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <a>Books</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <a>Authors</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
