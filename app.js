@@ -58,6 +58,9 @@ function BookRec(){
         let rec5 ="Images/Shadow House (Snake) - Copy.jpg";
         let rec6 ="Images/The Grimoire Shade.jpg";
         let rec7 ="Images/Werewolf.jpg";
+        while (BookRec < 1 || BookRec > 7){
+            BookRec = prompt('Stop breaking my website! Enter a number between 1 and 7.');
+        }
 
         if (BookRec == 1){
             document.write('<img src="' + rec1 + '"/>');
@@ -106,10 +109,6 @@ function BookRec(){
             document.write('<img src="' + rec5 + '"/>');
             document.write('<img src="' + rec6 + '"/>');
             document.write('<img src="' + rec7 + '"/>');
-        }
-
-        else {
-            prompt('Stop breaking my website! Enter a number between 1 and 7.');
         }
      }
     
