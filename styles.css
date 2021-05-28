@@ -118,6 +118,7 @@ a {
     display: block;
     text-justify: center;
     text-align: center;
+    font-size: 17px;
 }
 
 #sitelogo {
@@ -156,11 +157,10 @@ a {
     display: flex;
     margin: 25px auto 25px auto;
     padding: 5px;
-    justify-self: center;
+    justify-self: left;
     align-self: center;
     columns: 2;
-    width: 800px;
-    padding-right: 220px;
+    width: 1200px;
 }
 
 .trendingcolumn {
@@ -183,6 +183,28 @@ a {
     margin: auto;
     padding-right: 125px;
 } 
+
+/* JS Book Rec Code Div */
+
+#bookrecs {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    max-width: auto;
+    justify-content: center;
+    justify-self: center;
+}
+
+#bookrecs img {
+    display: inline;
+    margin: 10px;
+    padding: 0px;
+    align-self: center;
+    max-width: 10%;
+}
+
+/* Grid Images Start Here. */
 
 .titletrend {
     max-width: 900px;
